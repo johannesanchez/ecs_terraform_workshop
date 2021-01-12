@@ -13,3 +13,7 @@ output "public_subnets" {
 output "igw_id" {
   value = module.vpc.igw_id
 }
+
+output "ecr_repository_url" {
+    value = aws_ecr_repository.app_repo.repository_url
+}
